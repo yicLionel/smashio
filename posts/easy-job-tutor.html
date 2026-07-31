@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Easy-Job-Tutor: An AI Resume Coach for Students · Smashio</title>
-  <meta name="description" content="Introducing Easy-Job-Tutor — an AI resume coach for students. How it works, why honesty in evaluation matters, and what comes next.">
+  <title>Easy-Job-Tutor: Teaching AI to Be an Honest Resume Coach · Smashio</title>
+  <meta name="description" content="Easy-Job-Tutor is a skill — an instruction set that turns any AI assistant into an honest resume coach for students.">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="wrap">
@@ -23,33 +26,32 @@
       <article class="post">
         <header class="post-head">
           <div class="post-date">2026-07-31</div>
-          <h1>Easy-Job-Tutor: An AI Resume Coach for Students</h1>
+          <h1>Easy-Job-Tutor: Teaching AI to Be an Honest Resume Coach</h1>
           <div class="post-tags"><span>Project</span></div>
         </header>
 
         <div class="post-body">
           <p>Job hunting for students is opaque. You paste a job description, upload your resume, and wait. What the company is looking for, how your background stacks up against it, what you should work on next — no one tells you.</p>
 
-          <p>Easy-Job-Tutor is a small tool I built to change that. It is an AI-powered resume coach aimed at college students and recent graduates, focused on three job tracks that are hard to navigate on your own: AI product, AI agent development, and AI operations.</p>
+          <p>Easy-Job-Tutor is my attempt to change that. It is not an app. It is a skill — a set of instructions that turns any capable AI assistant into a resume coach. Install it once, and the assistant learns how to analyze a JD, diagnose gaps against your experience, ask for the details you haven't written down, rewrite bullet points, draft cover letters and referral messages, prepare interview answers, and — when asked — build an ATS-friendly PDF resume.</p>
 
-          <h2>How it works</h2>
-          <p>The flow is deliberately simple. You paste a job description and upload your resume — PDF, Word, or plain text. The tool reads the JD, identifies the target role, and scores your resume against it across four dimensions: core skills, project experience, education, and overall fit. A score ring shows the result at a glance, and a gap list tells you, in order of importance, what the JD wants that your resume doesn't show. Finally, it generates a phased learning path and interview questions targeted at those gaps, all exportable as Markdown. The whole interaction takes four steps. Nothing is hidden behind jargon.</p>
+          <h2>A skill, not an app</h2>
+          <p>Designing it as a skill rather than a product was deliberate. Students already talk to AI every day; they don't need another account, another interface, another tab. The instructions travel to wherever the conversation happens — Claude Code, Codex CLI, OpenCode, Hermes, any assistant that can read a manual. Installation is one command.</p>
 
           <h2>Honesty is the feature</h2>
-          <p>The part I'm most careful about is honesty. A resume tool that flatters you is not useful. The matching engine is a rules-based system — keywords weighted by importance, mapped to a small knowledge base of skills per track. It is explainable: every score can be traced back to a specific hit or miss in your resume. It makes no claims it can't support. This also means it runs at zero cost, works offline, and never sends your resume to a third party. For a student tool, those properties matter more than marginal accuracy.</p>
+          <p>The part I'm most careful about is honesty. A resume tool that flatters you is not useful. The skill's rules are built around one constraint: never invent. Every fact in your background is tracked as <code>confirmed</code>, <code>pending_confirmation</code>, or <code>model_inference</code>, with its source. Only confirmed facts may enter the final resume. If a claim can't be supported, the assistant asks for the missing detail instead of guessing. If you ask it to fabricate, it refuses, explains the risk, and offers truthful alternatives.</p>
 
-          <h2>What it took</h2>
-          <p>There were lessons along the way. Deploying FastAPI to Vercel took six failed builds before it worked — the details are exactly as tedious as you imagine, but each failure taught something real about how the platform routes and packages Python functions. I wrote it down, because the next person (including me, in six months) will need it.</p>
+          <p>The review system follows the same discipline. Five dimensions — JD match, ATS, HR scanability, interview readiness, credibility — each scored with evidence and a concrete improvement action. When material is insufficient, it says so instead of guessing a number. A resume built this way holds up: every claim survives an interviewer's follow-up question, because nothing in it was made up to begin with.</p>
 
-          <h2>Where it's going</h2>
-          <p>The current version is live and usable — the source code is on <a href="https://github.com/yicLionel/Easy-Job-Tutor-Web">GitHub</a>. The next step is semantic matching with a language model — replacing the keyword engine without changing the interface, so the tool can understand intent rather than exact words. After that: OCR for scanned resumes, accounts and history, and more job tracks.</p>
+          <h2>What it ships with</h2>
+          <p>The skill comes with analysis and review templates, PDF design specs, build and verification scripts, example workflows, and documentation in six languages, released under Apache 2.0 — the source is on <a href="https://github.com/yicLionel/Easy-Job-Tutor">GitHub</a>. It has since grown siblings: a browser extension, and a web version of the same logic.</p>
 
           <blockquote>I built this for a simple reason. When I was looking for my first job, I would have appreciated something that told me plainly what was missing. Easy-Job-Tutor is an attempt to be that, for someone else.</blockquote>
         </div>
 
         <nav class="post-nav">
           <span class="muted">← Previous: None</span>
-          <span class="muted">Next: None →</span>
+          <a href="day-one-with-claude-code.html">Next: Day One with Claude Code →</a>
         </nav>
       </article>
     </main>
