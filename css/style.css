@@ -369,6 +369,96 @@ footer.site a {
   border-bottom: none;
 }
 
+/* ---------- GitHub 贡献图 ---------- */
+
+.github {
+  margin-top: 3rem;
+}
+
+.github-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.github-head h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.github-head a {
+  font-size: 0.85rem;
+  color: var(--muted);
+  border-bottom: none;
+}
+
+.gh-graph {
+  margin-top: 1.1rem;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid var(--line);
+  background: #fafafa;
+  overflow-x: auto;
+}
+
+.gh-grid {
+  display: flex;
+  gap: 3px;
+}
+
+.gh-col {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.gh-cell {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  background: #ebedf0;
+}
+
+.gh-cell[data-l="1"] {
+  background: #9be9a8;
+}
+
+.gh-cell[data-l="2"] {
+  background: #40c463;
+}
+
+.gh-cell[data-l="3"] {
+  background: #30a14e;
+}
+
+.gh-cell[data-l="4"] {
+  background: #216e39;
+}
+
+.gh-loading,
+.gh-error {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.gh-meta {
+  margin-top: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.gh-legend {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.75rem;
+}
+
 /* ---------- 订阅 ---------- */
 
 .subscribe {
