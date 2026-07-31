@@ -1,0 +1,388 @@
+/* ============================================
+   极简个人博客 · Minimal Personal Blog
+   白底黑字，系统字体，克制排版
+   ============================================ */
+
+:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #8a8a8a;
+  --line: #e8e8e8;
+  --maxw: 680px;
+  --gap: 2.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  transition: border-color 0.15s ease;
+}
+
+a:hover {
+  border-color: var(--fg);
+}
+
+/* ---------- 布局 ---------- */
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* ---------- 头部 ---------- */
+
+header.site {
+  padding: 3.5rem 0 2.5rem;
+}
+
+.site-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.site-title a {
+  border-bottom: none;
+}
+
+.site-desc {
+  margin-top: 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+nav.site {
+  margin-top: 1.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 1.75rem;
+}
+
+nav.site a {
+  font-size: 0.9rem;
+  color: var(--muted);
+  border-bottom: none;
+}
+
+nav.site a:hover {
+  color: var(--fg);
+}
+
+nav.site a.active {
+  color: var(--fg);
+  border-bottom: 1px solid var(--fg);
+}
+
+/* ---------- 首页时间线 ---------- */
+
+.timeline {
+  position: relative;
+  padding: 0.5rem 0 1rem;
+}
+
+/* 纵向时间轴线 */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  bottom: 6px;
+  left: 7px;
+  width: 1px;
+  background: var(--line);
+}
+
+.tl-item {
+  position: relative;
+  padding: 0 0 2.75rem 2.5rem;
+}
+
+.tl-item:last-child {
+  padding-bottom: 0.5rem;
+}
+
+.tl-dot {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--fg);
+  background: var(--bg);
+}
+
+.tl-date {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 0.7rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.tl-card {
+  display: block;
+  border: 1px solid var(--line);
+  transition: border-color 0.15s ease;
+}
+
+.tl-card:hover {
+  border-color: var(--fg);
+}
+
+.tl-cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #f4f4f4;
+}
+
+.tl-info {
+  padding: 1rem 1.25rem 1.3rem;
+}
+
+.tl-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.tl-excerpt {
+  margin-top: 0.4rem;
+  font-size: 0.9rem;
+  color: #666;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.tl-cat {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 0.05rem 0.5rem;
+}
+
+/* ---------- 文章详情 ---------- */
+
+article.post {
+  padding: 1rem 0 4rem;
+}
+
+.post-head .post-date {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.post-head h1 {
+  margin-top: 0.6rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -0.015em;
+}
+
+.post-head .post-tags {
+  margin-top: 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.post-head .post-tags span {
+  font-size: 0.75rem;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 0.1rem 0.6rem;
+}
+
+.post-body {
+  margin-top: 2.5rem;
+}
+
+.post-body h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 2.2rem 0 0.8rem;
+}
+
+.post-body h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 1.8rem 0 0.6rem;
+}
+
+.post-body p {
+  margin-bottom: 1.2rem;
+}
+
+.post-body ul,
+.post-body ol {
+  margin: 0 0 1.2rem 1.4rem;
+}
+
+.post-body li {
+  margin-bottom: 0.35rem;
+}
+
+.post-body blockquote {
+  margin: 1.5rem 0;
+  padding-left: 1.1rem;
+  border-left: 2px solid var(--fg);
+  color: var(--muted);
+}
+
+.post-body code {
+  font-family: "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.85em;
+  background: #f6f6f6;
+  padding: 0.15em 0.4em;
+}
+
+.post-body pre {
+  margin: 1.5rem 0;
+  padding: 1.1rem 1.25rem;
+  background: #fafafa;
+  border: 1px solid var(--line);
+  overflow-x: auto;
+}
+
+.post-body pre code {
+  background: none;
+  padding: 0;
+  font-size: 0.82rem;
+}
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+
+.post-nav span.muted {
+  color: var(--muted);
+}
+
+/* ---------- 关于页 ---------- */
+
+.page {
+  padding: 1rem 0 4rem;
+}
+
+.page h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.page p {
+  margin-bottom: 1.2rem;
+  color: #444;
+}
+
+/* ---------- 归档页 ---------- */
+
+.archive-year {
+  margin: 1.6rem 0 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.archive-list {
+  list-style: none;
+}
+
+.archive-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.95rem;
+}
+
+.archive-list li a {
+  border-bottom: none;
+}
+
+.archive-list li a:hover {
+  color: var(--muted);
+}
+
+.archive-list time {
+  color: var(--muted);
+  font-size: 0.8rem;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- 页脚 ---------- */
+
+footer.site {
+  margin-top: 3rem;
+  padding: 1.75rem 0 3rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.8rem;
+  color: var(--muted);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+footer.site a {
+  border-bottom: none;
+}
+
+/* ---------- 响应式 ---------- */
+
+@media (max-width: 480px) {
+  header.site {
+    padding-top: 2.25rem;
+  }
+  .post-head h1 {
+    font-size: 1.45rem;
+  }
+  .tl-item {
+    padding-left: 1.75rem;
+  }
+  .archive-list li {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+}
