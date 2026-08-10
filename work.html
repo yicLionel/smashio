@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work · Smashio</title>
+  <meta name="description" content="作品集 — AI 产品、Agent 工程、机器学习实验">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div class="site-title"><a href="index.html">Smashio</a></div>
+      <div class="site-desc">Notes &amp; thoughts</div>
+      <nav class="site">
+        <a href="index.html">Home</a>
+        <a href="archive.html">Archive</a>
+        <a href="work.html" class="active">Work</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <div class="work-hero">
+        <h1>保持好奇心，让 AI 完成你的梦想。</h1>
+        <p class="hero-bio">计算机与软件系统本科背景，理解 Agent Loop、工具调用、上下文管理、MCP 等 AI 应用机制，并能使用 Coding Agent 与 AI 工具辅助产品开发和研究提效；同时具备 AI 产品评测、科技项目筛选、产业链研究、访谈及 Pitch/BP 材料经验，能够连接技术理解、商业化判断与沟通协作。</p>
+        <div class="work-meta">
+          <div class="work-meta-item">
+            <div class="meta-label">Base</div>
+            <div class="meta-value">上海</div>
+          </div>
+          <div class="work-meta-item">
+            <div class="meta-label">专注领域</div>
+            <div class="meta-value">Agent / AI 产品 / AIGC / Vibe Coding</div>
+          </div>
+          <div class="work-meta-item">
+            <div class="meta-label">经历</div>
+            <div class="meta-value">2 年 AI 方向行业研究 · 3 款产品</div>
+          </div>
+          <div class="work-meta-item">
+            <div class="meta-label">邮箱</div>
+            <div class="meta-value">yichen-yan@outlook.com</div>
+          </div>
+        </div>
+        <button class="work-print" onclick="window.print()">打印 / 导出 PDF</button>
+      </div>
+
+      <!-- GitHub contributions -->
+      <section class="github">
+        <div class="github-head">
+          <h2>GitHub</h2>
+          <a href="https://github.com/yicLionel" target="_blank" rel="noopener">@yicLionel</a>
+        </div>
+        <div class="gh-graph" id="gh-graph" aria-label="GitHub contribution graph">
+          <p class="gh-loading">Loading contributions…</p>
+        </div>
+        <div class="gh-meta">
+          <span id="gh-total"></span>
+          <span class="gh-legend" aria-hidden="true">
+            <span>Less</span>
+            <span class="gh-cell" data-l="0"></span>
+            <span class="gh-cell" data-l="1"></span>
+            <span class="gh-cell" data-l="2"></span>
+            <span class="gh-cell" data-l="3"></span>
+            <span class="gh-cell" data-l="4"></span>
+            <span>More</span>
+          </span>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <div class="sec-head">
+        <span class="sec-num">01</span>
+        <h2>精选作品</h2>
+      </div>
+
+      <!-- Project 01: Easy-Job-Tutor -->
+      <div class="work-item">
+        <button class="work-toggle" id="wt-ejt" aria-expanded="false" aria-controls="case-ejt">
+          <span class="wk-idx">01</span>
+          <span class="wk-title">Easy-Job-Tutor — AI 简历教练</span>
+          <span class="wk-desc">面向应届生与转行者的 AI 求职助手，覆盖 JD 分析 → 差距诊断 → 素材追问 → 简历重写 → 面试准备的完整闭环，以「不编造、可解释」为核心原则。<strong>三端交付 · Web 端零 API 成本 · 开源</strong></span>
+          <span class="wk-meta">
+            <span class="wk-tags">AI 产品 · 0→1 · 多端</span>
+            <span class="wk-year">2026</span>
+          </span>
+          <span class="wk-arrow">▾</span>
+        </button>
+
+        <div id="case-ejt">
+          <div class="case-panel">
+            <div class="case-inner">
+
+              <div class="case-summary">
+                <p class="case-lead">面向应届生与转行者的 AI 求职助手，把「简历石沉大海」的焦虑，变成一套看得见差距、补得上证据、经得起面试追问的完整流程。</p>
+                <div class="case-chips">
+                  <span class="case-chip"><strong>角色</strong> · 产品主创 · 0→1</span>
+                  <span class="case-chip"><strong>周期</strong> · 2026</span>
+                  <span class="case-chip"><strong>形态</strong> · AI Skill · Chrome 插件 · Web</span>
+                  <span class="case-chip"><strong>状态</strong> · 在线可用 · 开源</span>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">背景</div>
+                <p><strong>身边很多同学投简历石沉大海——不是没能力，而是经历「不会写」。</strong></p>
+                <p>AI 简历工具不少，但多数只做「同义词替换」式润色；认真一点的收费数千元，免费工具的致命短板是——替你编造经历。</p>
+                <p class="case-quote">「 AI 简历辅导真正的价值，不是把简历写得更漂亮，而是让人能诚实地说出自己做过什么，并把它讲清楚。」</p>
+                <p>作为 AI 产品经理，我看到 LLM 在「结构化诊断 + 追问式补证」上的能力边界刚好够用，也知道它最容易在哪里翻车。</p>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">痛点</div>
+                <div class="case-grid3">
+                  <div class="case-card">
+                    <strong>用户 · 经历「不值钱」</strong>
+                    <p>课程项目、社团活动写得像流水账，自己都觉得没内容可写。</p>
+                  </div>
+                  <div class="case-card">
+                    <strong>市场 · AI 爱编造</strong>
+                    <p>默认生成看似完美、实则无中生有的经历，面试一追问就崩。</p>
+                  </div>
+                  <div class="case-card">
+                    <strong>成本 · 好辅导太贵</strong>
+                    <p>专业辅导数千元；年轻人既缺钱也缺耐心，需要立等可取的免费替代。</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">目标</div>
+                <p><strong>用户零成本走完分析→诊断→补证→改写→面试全链路，且每一环结论都能从简历原文追溯；衡量做对的核心不是用户量，而是不撒谎。</strong></p>
+                <div class="case-strip">
+                  <div><strong>不编造</strong><span>一切基于确认事实</span></div>
+                  <div><strong>可解释</strong><span>结论可追溯到原文</span></div>
+                  <div><strong>零成本</strong><span>无需任何 LLM API</span></div>
+                  <div><strong>诚实第一</strong><span>经得起面试追问</span></div>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">行动</div>
+                <div class="case-rows">
+                  <div class="case-row"><strong>全流程</strong><span>JD 分析 → 差距诊断 → 素材追问 → 改写 bullet → 求职材料 → 面试准备 → ATS 友好 PDF，七步闭环</span></div>
+                  <div class="case-row"><strong>信任机制</strong><span>事实台账 · 确认闸门 · 五维评审 · 多 JD 底稿——从机制上杜绝编造</span></div>
+                  <div class="case-row"><strong>三端演进</strong><span>先做 Skill 验证工作流 → Chrome 插件贴近投递现场 → Web 零门槛在线</span></div>
+                  <div class="case-row"><strong>技术约束</strong><span>FastAPI + Vue 3 + Vercel；规则引擎可解释零成本；插件本地解析、Key 只存本机；PDF 文本可选中</span></div>
+                </div>
+                <div class="case-steps">
+                  <span>目标与材料</span><span class="step-arrow">→</span><span>JD 分析</span><span class="step-arrow">→</span><span>证据映射</span><span class="step-arrow">→</span><span>追问确认</span><span class="step-arrow">→</span><span>材料生成</span><span class="step-arrow">→</span><span>PDF 排版</span><span class="step-arrow">→</span><span>交付校验</span>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">结果</div>
+                <div class="case-strip">
+                  <div><strong>3 端</strong><span>Skill · 插件 · Web 全交付</span></div>
+                  <div><strong>0 元</strong><span>Web 分析全链路 API 成本</span></div>
+                  <div><strong>9+6</strong><span>测试全绿 · Web 另有单测</span></div>
+                  <div><strong>3 种</strong><span>PDF 风格 · ATS 可选中</span></div>
+                </div>
+                <p class="case-small">Skill 9 项契约测试通过 · 插件 6 项领域测试 + 本机侧载成功（2026-07-27）· Web 部署 Vercel · Apache 2.0 开源。</p>
+                <div class="case-links">
+                  <a href="https://easy-job-tutor-web.vercel.app/" target="_blank" rel="noopener">在线体验 →</a>
+                  <a href="https://github.com/yicLionel/Easy-Job-Tutor" target="_blank" rel="noopener">GitHub · 主仓库 →</a>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">取舍与复盘</div>
+                <div class="case-rows">
+                  <div class="case-row"><strong>先不用大模型</strong><span>规则引擎换「可解释 + 零成本」，接口留好可无缝升级为 LLM</span></div>
+                  <div class="case-row"><strong>先做 Skill</strong><span>最低成本验证追问式工作流，再投入浏览器端与 Web</span></div>
+                  <div class="case-row"><strong>诚实优先</strong><span>宁可慢，不编造——牺牲即时惊喜，换求职场景最珍贵的信任</span></div>
+                  <div class="case-row"><strong>复盘</strong><span>什么判断被验证了？什么做法重来会不同？</span></div>
+                </div>
+              </div>
+
+              <div class="case-gallery">
+                <img src="images/work-ejt-resume.png" alt="Easy-Job-Tutor 生成的 Modern Minimal 风格简历预览">
+                <p>最终产物是 ATS 友好、可选中文本的 PDF 简历——三种风格随岗位切换，设计原则明确拒绝技能条与花哨排版。</p>
+              </div>
+
+              <button class="case-close" onclick="document.getElementById('wt-ejt').click()">收起 ▲</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 02: KamaClaude -->
+      <div class="work-item">
+        <button class="work-toggle" id="wt-kama" aria-expanded="false" aria-controls="case-kama">
+          <span class="wk-idx">02</span>
+          <span class="wk-title">KamaClaude — Agent 运行时源码深潜</span>
+          <span class="wk-desc">基于开源 KamaClaude 的本地 AI Agent 运行时（daemon + CLI/TUI + Agent Loop），以「读懂 Agent 工程内核」为目标的深度源码研读与上下文优化实验。<strong>修复 2 个真实 bug · 287 测试全绿 · 诚实验证纪律</strong></span>
+          <span class="wk-meta">
+            <span class="wk-tags">学习实践 · Agent 工程 · 开源</span>
+            <span class="wk-year">2026</span>
+          </span>
+          <span class="wk-arrow">▾</span>
+        </button>
+
+        <div id="case-kama">
+          <div class="case-panel">
+            <div class="case-inner">
+
+              <div class="case-summary">
+                <p class="case-lead">为判断 Agent 类产品的技术可行性，深入真实 Agent 运行时读源码、做实验、提优化。基于开源 KamaClaude，非原创项目——价值在于建立对 Agent 工程内核的完整认知。</p>
+                <div class="case-chips">
+                  <span class="case-chip"><strong>角色</strong> · 源码研读 · 优化实验</span>
+                  <span class="case-chip"><strong>周期</strong> · 2026.06 — 07</span>
+                  <span class="case-chip"><strong>形态</strong> · 本地 Agent 运行时</span>
+                  <span class="case-chip"><strong>定位</strong> · 基于开源 · 学习型</span>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">背景</div>
+                <p><strong>作为 AI 产品经理，判断 Agent 类产品的可行性，不能只停留在 API 层——需要真正读懂模型如何多步执行、工具如何被调用、上下文窗口如何管理。</strong></p>
+                <p>选择开源 KamaClaude 深度研读：它把模型调用、工具执行、权限审批、会话管理与上下文压缩放进同一套运行流程，是最贴近 Claude Code 一类的真实 Agent 工程样本。</p>
+                <p class="case-quote">「 对 Agent 产品做出靠谱判断的前提，是把 Agent 运行时从黑盒变成自己读得懂、改得动的系统。」</p>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">痛点</div>
+                <div class="case-grid3">
+                  <div class="case-card">
+                    <strong>成本 · 压缩很贵</strong>
+                    <p>LLM 全量压缩本身消耗大量 token，一次失败或无收益的压缩不应反复触发。</p>
+                  </div>
+                  <div class="case-card">
+                    <strong>能力 · 尾部事实丢失</strong>
+                    <p>超长工具输出被「只留前缀」截断，测试失败原因、退出码所在的关键尾部被丢弃。</p>
+                  </div>
+                  <div class="case-card">
+                    <strong>判断 · 黑盒难优化</strong>
+                    <p>上下文管理是否有效、省没省钱，缺少可测量、可复现的验证手段。</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">目标</div>
+                <p><strong>把上下文管理从「黑盒」变成可测量、可优化；验证纪律第一——没有真实数据，不编造收益结论。</strong></p>
+                <div class="case-strip">
+                  <div><strong>读通</strong><span>完整调用链到压缩模块</span></div>
+                  <div><strong>可测</strong><span>确定性对比可复现</span></div>
+                  <div><strong>低风险</strong><span>改动不引入行为回归</span></div>
+                  <div><strong>不吹</strong><span>未实测的收益不声明</span></div>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">行动</div>
+                <div class="case-rows">
+                  <div class="case-row"><strong>通读调用链</strong><span>CLI/TUI → daemon(JSON-RPC/NDJSON) → AgentLoop → 工具/权限/会话/压缩，建立全链路认知</span></div>
+                  <div class="case-row"><strong>头尾截断</strong><span>超长 tool_result 由「只留前缀」改为「头尾各留」，修复 2 个真实 bug（非 dict 崩溃、keep>limit 边界）</span></div>
+                  <div class="case-row"><strong>压缩治理</strong><span>新增 cooldown 与「无收益保护」（API token 计数），避免高频重复付费压缩</span></div>
+                  <div class="case-row"><strong>验证纪律</strong><span>FakeProvider + git worktree 做改动前后确定性对比，零 API 成本、完全可复现</span></div>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">结果</div>
+                <div class="case-strip">
+                  <div><strong>60k</strong><span>超长输出截断后头尾事实均保留</span></div>
+                  <div><strong>3 次</strong><span>21 步高水位仅触发压缩尝试（cooldown=10）</span></div>
+                  <div><strong>287</strong><span>测试全绿 · mypy 85 文件 · ruff 归零</span></div>
+                  <div><strong>0 项</strong><span>未实测的收益声明（不编造节省）</span></div>
+                </div>
+                <p class="case-small">改动前超长输出尾部关键事实全部丢失，改动后 4 档输入长度（4.1k / 8k / 20k / 60k 字符）均保留头尾；截断吞吐 ~µs/条，与改动前同数量级。真实 API 对比因模型行为方差大 + 触发阈值达不到（需 ~150k token）而放弃，改为确定性方案。</p>
+                <div class="case-links">
+                  <a href="https://github.com/yicLionel/KamaClaude" target="_blank" rel="noopener">GitHub · 学习仓库 →</a>
+                  <a href="https://github.com/youngyangyang04/KamaClaude" target="_blank" rel="noopener">上游开源项目 →</a>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">取舍与复盘</div>
+                <div class="case-rows">
+                  <div class="case-row"><strong>放弃真实 API 对比</strong><span>模型单次 run 文档量远达不到截断/压缩阈值，且步数与行为方差大、无法归因——果断改确定性路线</span></div>
+                  <div class="case-row"><strong>自动压缩默认关闭</strong><span>保守优先：宁可不用，不赌「每次都值得压缩」</span></div>
+                  <div class="case-row"><strong>诚实纪律</strong><span>未做真实 API benchmark 前，不在简历或文档里声称 token/成本/延迟收益——等有数据再写</span></div>
+                  <div class="case-row"><strong>复盘</strong><span>这次深潜改变了你对 Agent 产品的哪个判断？下一步想验证什么？</span></div>
+                </div>
+              </div>
+
+              <div class="case-gallery">
+                <img class="wide-img" src="images/work-kama-arch.png" alt="KamaClaude 分层架构图">
+                <p>KamaClaude 分层架构：CLI / TUI 客户端经 JSON-RPC 与常驻 daemon 通信，核心是 AgentLoop + 工具注册 + 权限 + 会话 + 上下文压缩。</p>
+              </div>
+
+              <button class="case-close" onclick="document.getElementById('wt-kama').click()">收起 ▲</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 03: ML Experiment -->
+      <div class="work-item">
+        <button class="work-toggle" id="wt-ml" aria-expanded="false" aria-controls="case-ml">
+          <span class="wk-idx">03</span>
+          <span class="wk-title">粗粒度→细粒度图像分类 — ML 系统实验</span>
+          <span class="wk-desc">从 10 种动物（粗粒度）到 10 种鸟类（细粒度），系统性评估 5 种 CNN 特征表示 × 7 种分类器 × 多组特征组合的交互效应，回答一个核心产品问题：表示与算法，谁更决定上限？<strong>Task 1 97.3% · Task 2 97.6% · 表示提升贡献 ~43pp</strong></span>
+          <span class="wk-meta">
+            <span class="wk-tags">ML 实验 · 特征工程 · CV</span>
+            <span class="wk-year">2025</span>
+          </span>
+          <span class="wk-arrow">▾</span>
+        </button>
+
+        <div id="case-ml">
+          <div class="case-panel">
+            <div class="case-inner">
+
+              <div class="case-summary">
+                <p class="case-lead">通过系统性 ML 实验回答一个产品级问题：当分类任务从「猫 vs 狗」变成「Ring-billed Gull vs Herring Gull」，特征表示和分类器哪一个更值得投入？结论：表示决定天花板，模型只是逼近它。</p>
+                <div class="case-chips">
+                  <span class="case-chip"><strong>角色</strong> · 实验设计与系统评估</span>
+                  <span class="case-chip"><strong>周期</strong> · 2025.03 — 05（墨大 COMP30027）</span>
+                  <span class="case-chip"><strong>形态</strong> · Python 实验管线 · LaTeX 学术报告</span>
+                  <span class="case-chip"><strong>定位</strong> · ML 技术深潜 · 学术研究</span>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">背景</div>
+                <p><strong>真实世界中，AI 分类产品往往从通用场景起步，逐步深入到专业细分领域——这和学术上的「粗粒度→细粒度」分类问题是同一件事。</strong></p>
+                <p>例如：电商商品识别先从「服装/电子/食品」大类做起，再细分到「T恤/衬衫/卫衣」；医疗影像先从「正常/异常」筛查做起，再定位到具体病变亚型。每一层粒度跃迁，都对特征表示和模型选择提出新的要求。</p>
+                <p class="case-quote">「 做 AI 产品的人需要理解：为什么同一个模型在通用场景表现好、到了专业场景就崩？答案往往不在模型本身，而在特征表示。」</p>
+                <p>本项目来自墨尔本大学 COMP30027 机器学习课程，在两个 Kaggle 竞赛任务上系统评估了特征表示与分类器的交互效应。</p>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">实验问题</div>
+                <div class="case-grid3">
+                  <div class="case-card">
+                    <strong>表示 vs 算法</strong>
+                    <p>特征表示和分类器选择，哪个对最终准确率影响更大？差距在不同粒度下如何变化？</p>
+                  </div>
+                  <div class="case-card">
+                    <strong>粒度跃迁</strong>
+                    <p>从粗粒度（动物大类）到细粒度（鸟类物种），最优模型选择是否会发生变化？</p>
+                  </div>
+                  <div class="case-card">
+                    <strong>特征互补性</strong>
+                    <p>手工特征（颜色/纹理/HOG）与 CNN 深度特征是互补还是重叠？哪些组合最有价值？</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">目标</div>
+                <p><strong>用严格的消融实验设计，量化每个因素（特征组、分类器、粒度）的边际贡献，得出可复现、可解释的结论。</strong></p>
+                <div class="case-strip">
+                  <div><strong>2 类</strong><span>Task 1 粗粒度 · Task 2 细粒度</span></div>
+                  <div><strong>5 种</strong><span>CNN 表示 · ResNet→EfficientNet</span></div>
+                  <div><strong>7 个</strong><span>分类器 · 线性/核/树/概率</span></div>
+                  <div><strong>5 折</strong><span>分层交叉验证 · 消融对照</span></div>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">实验设计</div>
+                <div class="case-rows">
+                  <div class="case-row"><strong>特征矩阵</strong><span>手工特征（颜色直方图 · HOG-PCA · 纹理 LBP） + 5 种 ImageNet 预训练 CNN 嵌入（ResNet-50/152 · EfficientNet-V2-S/M/L）→ 多组拼接消融</span></div>
+                  <div class="case-row"><strong>分类器矩阵</strong><span>Logistic Regression · Linear SVM · RBF SVM · KNN · Gaussian NB · Random Forest · Extra Trees——覆盖线性/非线性/距离/概率/集成五大范式</span></div>
+                  <div class="case-row"><strong>调参策略</strong><span>每类模型独立做分层 5 折 CV 网格搜索；最终模型在全量训练集上重训练后生成 Kaggle 提交</span></div>
+                  <div class="case-row"><strong>评估指标</strong><span>Accuracy（主，匹配 Kaggle 赛制）+ Macro-F1（辅，检测类别间不平衡）</span></div>
+                </div>
+                <div class="case-steps">
+                  <span>数据加载</span><span class="step-arrow">→</span><span>特征提取</span><span class="step-arrow">→</span><span>特征拼接</span><span class="step-arrow">→</span><span>标准化</span><span class="step-arrow">→</span><span>CV 网格搜索</span><span class="step-arrow">→</span><span>验证集评估</span><span class="step-arrow">→</span><span>全量重训</span><span class="step-arrow">→</span><span>Kaggle 提交</span>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">关键发现</div>
+
+                <p><strong>发现一：表示决定天花板，模型只是逼近它。</strong></p>
+                <p>仅用手工特征时，Task 1 最优仅 54.4%、Task 2 仅 40.5%。加入 EfficientNet-V2-L 嵌入后，Task 1 跃升至 97.3%（+43pp）、Task 2 跃升至 97.6%（+57pp）。一旦表示足够强，7 个分类器全部 >92%，差距缩小到 5pp 以内。</p>
+
+                <p style="margin-top:1rem;"><strong>发现二：粗→细粒度跃迁时，最优模型类型发生翻转。</strong></p>
+                <p>Task 1 最优是 Logistic Regression（简单线性模型，97.3%）；Task 2 最优是 Random Forest / Extra Trees（非线性集成模型，97.6%）。细粒度分类中类别边界更复杂，树模型捕捉非线性交互的优势开始显现。</p>
+
+                <p style="margin-top:1rem;"><strong>发现三：特征选择需要「粒度感知」。</strong></p>
+                <p>颜色特征在粗粒度 Task 1 中有用（动物毛色差异大），但在细粒度 Task 2 中反而成为噪声（鸟类颜色分布重叠）。最终 Task 2 刻意去掉了颜色特征，仅保留 HOG + 附加特征 + CNN 嵌入。</p>
+
+                <div class="case-strip">
+                  <div><strong>54% → 97%</strong><span>Task 1 手工→深度特征跃升</span></div>
+                  <div><strong>41% → 98%</strong><span>Task 2 手工→深度特征跃升</span></div>
+                  <div><strong>LR → RF</strong><span>粗→细分类器最优选择翻转</span></div>
+                  <div><strong>2/84</strong><span>Task 2 最终模型仅 2 个错误</span></div>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">产品启示</div>
+                <div class="case-rows">
+                  <div class="case-row"><strong>先投表示，再调模型</strong><span>做 AI 分类产品时，优先投入特征表示的质量（预训练模型选型、领域数据微调），分类器选型的边际收益远小于表示提升</span></div>
+                  <div class="case-row"><strong>粒度决定架构</strong><span>通用场景用简单模型即可；一旦进入专业细分领域（医疗、工业检测、物种识别），需评估是否需要非线性模型来捕捉细粒度差异</span></div>
+                  <div class="case-row"><strong>特征要做减法</strong><span>不是特征越多越好——对细粒度任务，全局颜色等粗粒度特征可能是噪声。特征选择应和业务场景的粒度匹配</span></div>
+                  <div class="case-row"><strong>可解释性需求</strong><span>树模型在细粒度任务中不仅更准，还能输出特征重要性排序——对需要解释「为什么判定为亚型 A 而非 B」的专业场景有额外价值</span></div>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">交付物</div>
+                <div class="case-strip">
+                  <div><strong>2 份</strong><span>Kaggle 提交文件（Task 1 + 2）</span></div>
+                  <div><strong>7 组</strong><span>消融实验结果表 · 含全部特征×模型组合</span></div>
+                  <div><strong>4 套</strong><span>独立调参脚本 · 分层 CV · 可复现</span></div>
+                  <div><strong>1 篇</strong><span>LaTeX 学术报告 · ACL 格式</span></div>
+                </div>
+                <p class="case-small">完整实验管线可复现：Python 特征提取 → 网格搜索 CV → 验证评估 → Kaggle 提交，全流程脚本化。5 种 CNN 特征提取支持 Apple MPS GPU 加速。</p>
+                <div class="case-links">
+                  <a href="https://www.kaggle.com/" target="_blank" rel="noopener">Kaggle 竞赛 →</a>
+                </div>
+              </div>
+
+              <div class="case-gallery">
+                <img class="wide-img" src="images/work-ml-confusion.png" alt="Task 2 Random Forest 混淆矩阵：仅 2 个错误均发生在视觉相似物种对之间">
+                <p>Task 2 混淆矩阵揭示模型的「认知边界」：2 个错误分别发生在 Ring-billed Gull ↔ Herring Gull 和 Yellow Warbler ↔ Wilson Warbler——均为肉眼难辨的近缘物种，说明剩余困难来自表示瓶颈而非模型拟合不足。</p>
+              </div>
+
+              <button class="case-close" onclick="document.getElementById('wt-ml').click()">收起 ▲</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Capabilities -->
+      <div class="sec-head">
+        <span class="sec-num">02</span>
+        <h2>能力矩阵</h2>
+      </div>
+      <div class="cap-grid">
+        <div class="cap-card">
+          <span class="cap-num">a.</span>
+          <h3>AI 产品策略</h3>
+          <p>判断模型能力边界，定义 AI 原生场景，规划从 MVP 到规模化的路线。</p>
+          <div class="cap-tools">Roadmap · 场景评估 · 竞品分析</div>
+        </div>
+        <div class="cap-card">
+          <span class="cap-num">b.</span>
+          <h3>大模型落地</h3>
+          <p>Prompt 工程、RAG 架构、评测集设计，与算法团队同频沟通。</p>
+          <div class="cap-tools">Prompt · RAG · Eval · Fine-tuning</div>
+        </div>
+        <div class="cap-card">
+          <span class="cap-num">c.</span>
+          <h3>数据驱动增长</h3>
+          <p>搭建北极星指标体系，通过实验与漏斗分析驱动留存与转化。</p>
+          <div class="cap-tools">SQL · A/B Test · 指标体系</div>
+        </div>
+        <div class="cap-card">
+          <span class="cap-num">d.</span>
+          <h3>用户体验设计</h3>
+          <p>为不确定性设计——处理 AI 的置信度、失败态与用户信任。</p>
+          <div class="cap-tools">Figma · 交互设计 · 用户研究</div>
+        </div>
+        <div class="cap-card">
+          <span class="cap-num">e.</span>
+          <h3>跨团队推动</h3>
+          <p>在算法、工程、业务多方之间对齐目标，推动复杂项目按期交付。</p>
+          <div class="cap-tools">PRD · 项目管理 · 向上沟通</div>
+        </div>
+        <div class="cap-card">
+          <span class="cap-num">f.</span>
+          <h3>技术深潜</h3>
+          <p>阅读 Agent 运行时源码，理解工具调用循环、上下文管理、MCP 等机制。</p>
+          <div class="cap-tools">Agent Loop · 上下文压缩 · Tool Use · MCP</div>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="sec-head">
+        <span class="sec-num">03</span>
+        <h2>教育背景</h2>
+      </div>
+
+      <div class="exp-item">
+        <span class="exp-period">2024.02 — 2026.12</span>
+        <div>
+          <h3>墨尔本大学</h3>
+          <div class="exp-role">计算机与软件系统 · 本科</div>
+          <p>核心课程：机器学习、数据结构与算法、数据库系统、操作系统。</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <span class="exp-period">2025.12 — 2026.02</span>
+        <div>
+          <h3>浙江大学</h3>
+          <div class="exp-role">商业智能与数据分析 · 寒假交换</div>
+          <p>GPA 3.8/4.0 · Distinction 结课。</p>
+        </div>
+      </div>
+
+      <div class="sec-head">
+        <span class="sec-num">04</span>
+        <h2>实习经历</h2>
+      </div>
+
+      <div class="exp-item">
+        <span class="exp-period">2025.07 — 2026.05</span>
+        <div>
+          <h3>久谦咨询 / 久谦资本</h3>
+          <div class="exp-role">IBD 部门 · 财务顾问（FA）实习生</div>
+          <p>参与 Kickstarter 等海外平台创新硬件项目筛选，覆盖具身智能机器人、AI 网球发球机器人、外骨骼及 AI 眼镜等方向；参与 30 余场投资人及创始人访谈，沉淀 20+ 份访谈及项目分析材料；制作 10+ 份客户 Pitch 和 BP 材料，持续更新覆盖 200+ 个项目的资料库。</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <span class="exp-period">2026.01 — 2026.04</span>
+        <div>
+          <h3>华泰证券股份有限公司</h3>
+          <div class="exp-role">研究所 · 互联网组实习生（兼职）</div>
+          <p>参与 ChatGPT、Gemini、Claude、MiniMax、GLM 等 5 款 AI 产品对比评测，形成 3+ 份报告材料；参与设计 5 组 AIGC 视频模型测试；跟踪 Google、OpenAI、阿里等厂商产品生态与 AI Infra 演进。</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <span class="exp-period">2024.06 — 2024.10</span>
+        <div>
+          <h3>国海证券股份有限公司</h3>
+          <div class="exp-role">研究所 · 海外组实习生</div>
+          <p>聚焦半导体上游薄膜材料，完成 1 份公司深度研报；开展全球智能手机竞争分析，覆盖 10+ 个品牌；协助搭建财务模型与估值分析框架，持续跟踪科技产业数据。</p>
+        </div>
+      </div>
+
+      <div class="sec-head">
+        <span class="sec-num">05</span>
+        <h2>校园经历</h2>
+      </div>
+
+      <div class="exp-item">
+        <span class="exp-period">2024.04 — 2026.07</span>
+        <div>
+          <h3>墨尔本大学中华文化社</h3>
+          <div class="exp-role">副社长</div>
+          <p>参与筹办两届墨尔本大学文化节，协调活动部、外联部、宣传部、财务部、秘书部等部门，统筹宣传、外联、预算、流程与现场执行。</p>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <span class="exp-period">2024.07 — 2025.07</span>
+        <div>
+          <h3>墨尔本大学中国学生会</h3>
+          <div class="exp-role">组织部秘书 · 优秀干部</div>
+          <p>参与筹备 2024 年墨尔本中秋及国庆晚会，联动多校中国学生会并对接总领馆及各方代表；组织会议，协调分工与时间节点。</p>
+        </div>
+      </div>
+
+      <!-- Contact -->
+      <div class="work-contact">
+        <div class="contact-kicker">欢迎联系 · Let's talk</div>
+        <h2>如果你也在做<br>有趣的 AI 产品，欢迎联系我。</h2>
+        <a class="contact-email" href="mailto:yichen-yan@outlook.com">yichen-yan@outlook.com</a>
+        <div class="contact-socials">
+          <a href="https://github.com/yicLionel">GitHub</a>
+          <a href="https://www.linkedin.com/in/yichen-yan-b991a028b">LinkedIn</a>
+        </div>
+      </div>
+
+    </main>
+
+    <section class="subscribe">
+      <h2>Subscribe</h2>
+      <p>Get an email when I publish a new post.</p>
+      <form class="subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/yichen" method="post" target="_blank" rel="noopener">
+        <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
+        <input type="hidden" name="embed" value="1">
+        <button type="submit">Subscribe</button>
+      </form>
+      <a class="powered" href="https://buttondown.com" target="_blank" rel="noopener">Powered by Buttondown</a>
+    </section>
+
+    <footer class="site">
+      <span>© 2026 Smashio</span>
+      <span><a href="about.html">About</a> · Powered by plain static pages</span>
+    </footer>
+  </div>
+
+  <script>
+    document.querySelectorAll('.work-toggle').forEach(function(btn) {
+      var panel = document.querySelector('#' + btn.getAttribute('aria-controls') + ' .case-panel');
+      btn.addEventListener('click', function() {
+        var open = panel.classList.toggle('open');
+        btn.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open);
+      });
+    });
+  </script>
+  <script src="scripts/github-graph.js"></script>
+</body>
+</html>

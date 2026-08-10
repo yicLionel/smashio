@@ -59,10 +59,33 @@
 
     totalEl.textContent = total + " contributions in the last year";
 
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    var COL_W = 13; // 10px cell + 3px gap
+
+    var monthRow = document.createElement("div");
+    monthRow.className = "gh-months";
+    var prevMonth = -1;
+
     var grid = document.createElement("div");
     grid.className = "gh-grid";
 
     for (var w = 0; w < WEEKS; w++) {
+      var d0 = new Date(weekStart);
+      d0.setDate(d0.getDate() + w * 7); // 该周第一列日期
+      var m = d0.getMonth();
+
+      // 月份时间线标注：月份变化时，在范围内对应列上方标出月份
+      if (m !== prevMonth) {
+        if (d0 >= start && d0 <= today) {
+          var lab = document.createElement("span");
+          lab.className = "gh-month";
+          lab.textContent = months[m];
+          lab.style.left = w * COL_W + "px";
+          monthRow.appendChild(lab);
+        }
+        prevMonth = m;
+      }
+
       var col = document.createElement("div");
       col.className = "gh-col";
       for (var dow = 0; dow < 7; dow++) {
@@ -84,6 +107,7 @@
     }
 
     root.innerHTML = "";
+    root.appendChild(monthRow);
     root.appendChild(grid);
   }
 
