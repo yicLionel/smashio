@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Work · Smashio</title>
-  <meta name="description" content="作品集 — AI 产品、Agent 工程、机器学习实验">
+  <meta name="description" content="作品集 — AI 产品、行业研究、内容运营、Agent 工程、机器学习实验">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -75,14 +75,158 @@
         <h2>精选作品</h2>
       </div>
 
-      <!-- Project 01: Easy-Job-Tutor -->
+      <!-- Project 01: 具身智能行业研究 AI 工作台 -->
+      <div class="work-item">
+        <button class="work-toggle" id="wt-emb" aria-expanded="false" aria-controls="case-emb">
+          <span class="wk-idx">01</span>
+          <span class="wk-title">具身智能行业研究 AI 工作台</span>
+          <span class="wk-desc">面向一级市场 FA 的 AI 行业研究提效产品：把资料搜索、数据摘录、口径核对和引用整理从重复劳动变成可追溯的证据流，同时保留人工审核。<strong>Dify · Tavily · GPT · Streamlit</strong></span>
+          <span class="wk-meta">
+            <span class="wk-tags">AI 产品 · 行业研究 · 0→1</span>
+            <span class="wk-year">2026</span>
+          </span>
+          <span class="wk-arrow">▾</span>
+        </button>
+
+        <div id="case-emb">
+          <div class="case-panel">
+            <div class="case-inner">
+
+              <div class="case-summary">
+                <p class="case-lead">面向一级市场 FA 行业研究的 AI 工作台：独立设计并开发，减少 FA 实习生和初级分析师的重复性整理，同时保留人工对关键数据和结论的审核。</p>
+                <div class="case-chips">
+                  <span class="case-chip"><strong>角色</strong> · 独立设计开发</span>
+                  <span class="case-chip"><strong>周期</strong> · 2026.07 — 至今</span>
+                  <span class="case-chip"><strong>技术栈</strong> · Dify · Tavily · GPT · Streamlit</span>
+                  <span class="case-chip"><strong>状态</strong> · MVP 落地 · 验证中</span>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">背景</div>
+                <p><strong>一级市场 FA 行业研究中，资料搜索、数据摘录、口径核对和引用整理耗时重复，且易口径混用、引用不准。</strong></p>
+                <p>面向 FA 实习生和初级分析师，减少重复性整理工作，同时保留人工对关键数据和结论的审核——不追求全自动，数据可信优先。</p>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">目标</div>
+                <p><strong>把行业研究的重复整理变成可追溯、可审核的证据流——每条 AI 生成结论都能对应原始来源、数据年份、地域和统计口径。</strong></p>
+                <div class="case-strip">
+                  <div><strong>5 阶段</strong><span>需求·框架·搜索·审核·简报</span></div>
+                  <div><strong>可追溯</strong><span>结论对应来源与口径</span></div>
+                  <div><strong>人工审核</strong><span>确认证据才进简报</span></div>
+                  <div><strong>低代码</strong><span>Dify · Streamlit 架构</span></div>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">行动</div>
+                <div class="case-rows">
+                  <div class="case-row"><strong>流程拆解</strong><span>梳理 FA 行业研究流程，拆解为研究需求、框架确认、资料搜索、证据审核和简报生成五个阶段</span></div>
+                  <div class="case-row"><strong>证据矩阵</strong><span>设计"证据矩阵"功能，使每条 AI 生成结论都能对应原始来源、数据年份、地域和统计口径</span></div>
+                  <div class="case-row"><strong>人工审核</strong><span>加入人工审核机制，仅经用户确认的证据进入最终简报</span></div>
+                  <div class="case-row"><strong>低代码架构</strong><span>采用 Dify、Tavily、GPT 和 Streamlit 搭建；设计 30 题 AI 评测集与真实用户测试方案，衡量引用准确性、信息完整性和研究效率</span></div>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">结果</div>
+                <div class="case-strip">
+                  <div><strong>5 项</strong><span>PRD · 工作流 · 质量规则 · 评测 · 计划</span></div>
+                  <div><strong>15 天</strong><span>实施计划</span></div>
+                  <div><strong>MVP</strong><span>开发与真实用户验证已落地</span></div>
+                  <div><strong>30 题</strong><span>AI 评测集设计</span></div>
+                </div>
+                <p class="case-small">完成产品需求文档、核心工作流、AI 质量规则、评测方案和 15 天实施计划，并建立 GitHub 仓库进行版本管理；MVP 开发与真实用户验证均已落地，经评测集与用户反馈验证了引用准确性、信息完整性和研究效率的提升。</p>
+              </div>
+
+              <button class="case-close" onclick="document.getElementById('wt-emb').click()">收起 ▲</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 02: AIGC 内容矩阵运营方案 -->
+      <div class="work-item">
+        <button class="work-toggle" id="wt-aigc" aria-expanded="false" aria-controls="case-aigc">
+          <span class="wk-idx">02</span>
+          <span class="wk-title">AIGC 内容矩阵运营方案</span>
+          <span class="wk-desc">围绕单一 IP 设计从 0 到 1 的账号孵化方案，覆盖用户分层、内容矩阵、AI 生产链路与数据复盘，沉淀为可复用的运营 SOP。<strong>3 个月目标 120+ 篇 · 涨粉 6,000+ · 单篇成本 &lt;0.1 元</strong></span>
+          <span class="wk-meta">
+            <span class="wk-tags">AIGC · 内容运营 · SOP 沉淀</span>
+            <span class="wk-year">2026</span>
+          </span>
+          <span class="wk-arrow">▾</span>
+        </button>
+
+        <div id="case-aigc">
+          <div class="case-panel">
+            <div class="case-inner">
+
+              <div class="case-summary">
+                <p class="case-lead">围绕单一 IP 的账号孵化方案：解决单人运营内容号产能难持续、爆款难复现、多平台改写重复劳动的问题，沉淀为可复用的运营 SOP。</p>
+                <div class="case-chips">
+                  <span class="case-chip"><strong>角色</strong> · 方案设计与 SOP 沉淀</span>
+                  <span class="case-chip"><strong>周期</strong> · 2026.06 — 至今</span>
+                  <span class="case-chip"><strong>形态</strong> · 内容矩阵 · 多平台</span>
+                  <span class="case-chip"><strong>状态</strong> · 方案交付 · 待执行验证</span>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">背景</div>
+                <p><strong>单人运营内容号产能难持续、爆款难复现、多平台改写重复劳动——这是个人内容创作的核心痛点。</strong></p>
+                <p>围绕单一 IP 设计一套从 0 到 1 的账号孵化方案，覆盖用户分层、内容矩阵、AI 生产链路与数据复盘，并沉淀为可复用的运营 SOP。</p>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">目标</div>
+                <p><strong>打造一套可复用的内容生产与增长体系：矩阵结构、Prompt 模板与数据口径可直接复用，单人也能持续产出。</strong></p>
+                <div class="case-strip">
+                  <div><strong>120+ 篇</strong><span>3 个月目标产出</span></div>
+                  <div><strong>6,000+</strong><span>有效涨粉目标</span></div>
+                  <div><strong>300+</strong><span>私域引流目标</span></div>
+                  <div><strong>&lt;0.1 元</strong><span>单篇 API 成本</span></div>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">行动</div>
+                <div class="case-rows">
+                  <div class="case-row"><strong>平台拆解</strong><span>拆解小红书、公众号、知乎三平台分发逻辑（首图与互动率、社交信任、搜索长尾）</span></div>
+                  <div class="case-row"><strong>矩阵设计</strong><span>确定"单账号×多平台×多栏目"矩阵与目标用户分层</span></div>
+                  <div class="case-row"><strong>生产链路</strong><span>搭建"选题→生成→平台改写→审校→数据回流"生产链路，制定模型选型与 Prompt 模板（含防幻觉约束）</span></div>
+                  <div class="case-row"><strong>质量机制</strong><span>建立内容质量评分卡（五维加权）、统一数据口径与周复盘机制，覆盖冷启动打法与单人时间分配</span></div>
+                </div>
+              </div>
+
+              <div class="case-sec">
+                <div class="case-label">结果</div>
+                <div class="case-strip">
+                  <div><strong>方案</strong><span>完整孵化方案 · 可复用 SOP</span></div>
+                  <div><strong>矩阵</strong><span>结构与 Prompt 模板直接复用</span></div>
+                  <div><strong>口径</strong><span>统一数据口径 · 周复盘</span></div>
+                  <div><strong>成本</strong><span>单篇 API 成本 &lt;0.1 元</span></div>
+                </div>
+                <p class="case-small">按立项口径测算，3 个月目标产出 120+ 篇内容、有效涨粉 6,000+、私域引流 300+ 人，单篇内容 API 成本控制在 0.1 元以内。交付完整孵化方案与可复用 SOP，矩阵结构、Prompt 模板与数据口径可直接复用；方案处于交付阶段，待真实账号验证执行。</p>
+              </div>
+
+              <button class="case-close" onclick="document.getElementById('wt-aigc').click()">收起 ▲</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 03: Easy-Job-Tutor -->
       <div class="work-item">
         <button class="work-toggle" id="wt-ejt" aria-expanded="false" aria-controls="case-ejt">
-          <span class="wk-idx">01</span>
-          <span class="wk-title">Easy-Job-Tutor — AI 简历教练</span>
-          <span class="wk-desc">面向应届生与转行者的 AI 求职助手，覆盖 JD 分析 → 差距诊断 → 素材追问 → 简历重写 → 面试准备的完整闭环，以「不编造、可解释」为核心原则。<strong>三端交付 · Web 端零 API 成本 · 开源</strong></span>
+          <span class="wk-idx">03</span>
+          <span class="wk-title">Easy-Job-Tutor — AI 求职辅助与简历优化平台</span>
+          <span class="wk-desc">围绕应届生多岗位投递中 JD 差异大、简历定制耗时及 AI 使用门槛不一的问题，通过用户分层分别设计低门槛标准化 Web 流程与高自由度 Agent Skill。<strong>Web + Skill 双形态 · 灰度 20 人 · 100 份 JD</strong></span>
           <span class="wk-meta">
-            <span class="wk-tags">AI 产品 · 0→1 · 多端</span>
+            <span class="wk-tags">AI 产品 · 求职辅助 · 双形态</span>
             <span class="wk-year">2026</span>
           </span>
           <span class="wk-arrow">▾</span>
@@ -93,74 +237,73 @@
             <div class="case-inner">
 
               <div class="case-summary">
-                <p class="case-lead">面向应届生与转行者的 AI 求职助手，把「简历石沉大海」的焦虑，变成一套看得见差距、补得上证据、经得起面试追问的完整流程。</p>
+                <p class="case-lead">面向应届生与转行者的 AI 求职助手：围绕「输入 JD → 识别匹配差距 → 针对性改写 → 生成可投递简历」链路，把简历定制从耗时重复劳动变成看得见差距的标准流程。</p>
                 <div class="case-chips">
-                  <span class="case-chip"><strong>角色</strong> · 产品主创 · 0→1</span>
-                  <span class="case-chip"><strong>周期</strong> · 2026</span>
-                  <span class="case-chip"><strong>形态</strong> · AI Skill · Chrome 插件 · Web</span>
-                  <span class="case-chip"><strong>状态</strong> · 在线可用 · 开源</span>
+                  <span class="case-chip"><strong>角色</strong> · 产品设计 · 0→1</span>
+                  <span class="case-chip"><strong>周期</strong> · 2026.06 — 07</span>
+                  <span class="case-chip"><strong>形态</strong> · Web 应用 · Agent Skill</span>
+                  <span class="case-chip"><strong>状态</strong> · 已上线 · 灰度完成</span>
                 </div>
               </div>
 
               <div class="case-sec">
                 <div class="case-label">背景</div>
-                <p><strong>身边很多同学投简历石沉大海——不是没能力，而是经历「不会写」。</strong></p>
-                <p>AI 简历工具不少，但多数只做「同义词替换」式润色；认真一点的收费数千元，免费工具的致命短板是——替你编造经历。</p>
-                <p class="case-quote">「 AI 简历辅导真正的价值，不是把简历写得更漂亮，而是让人能诚实地说出自己做过什么，并把它讲清楚。」</p>
-                <p>作为 AI 产品经理，我看到 LLM 在「结构化诊断 + 追问式补证」上的能力边界刚好够用，也知道它最容易在哪里翻车。</p>
+                <p><strong>应届生多岗位投递中 JD 差异大、简历定制耗时，且用户 AI 使用能力不一——一刀切的产品无法满足所有人。</strong></p>
+                <p>通过用户观察与需求分析进行用户分层：为普通用户设计低门槛标准化 Web 流程，为高阶用户提供高自由度 Agent Skill。</p>
+                <p class="case-quote">「 求职辅助产品的核心，不是替用户把简历写得更漂亮，而是让每个人都能按自己的节奏，把简历改到配得上那个 JD。」</p>
               </div>
 
               <div class="case-sec">
                 <div class="case-label">痛点</div>
                 <div class="case-grid3">
                   <div class="case-card">
-                    <strong>用户 · 经历「不值钱」</strong>
-                    <p>课程项目、社团活动写得像流水账，自己都觉得没内容可写。</p>
+                    <strong>用户 · JD 差异大</strong>
+                    <p>多岗位投递时每个 JD 要求不同，简历定制耗时且容易错过重点。</p>
                   </div>
                   <div class="case-card">
-                    <strong>市场 · AI 爱编造</strong>
-                    <p>默认生成看似完美、实则无中生有的经历，面试一追问就崩。</p>
+                    <strong>门槛 · AI 使用不一</strong>
+                    <p>普通用户不会写 Prompt、容易被复杂 Agent 流程吓退；高阶用户需要自由探索。</p>
                   </div>
                   <div class="case-card">
-                    <strong>成本 · 好辅导太贵</strong>
-                    <p>专业辅导数千元；年轻人既缺钱也缺耐心，需要立等可取的免费替代。</p>
+                    <strong>成本 · 重复劳动</strong>
+                    <p>反复修改简历、重复设计 Prompt 的隐性成本高，产出不稳定。</p>
                   </div>
                 </div>
               </div>
 
               <div class="case-sec">
                 <div class="case-label">目标</div>
-                <p><strong>用户零成本走完分析→诊断→补证→改写→面试全链路，且每一环结论都能从简历原文追溯；衡量做对的核心不是用户量，而是不撒谎。</strong></p>
+                <p><strong>用同一套能力服务不同用户：Web 端隐藏复杂度降低门槛，Skill 端保留深度分析满足进阶，均围绕标准求职链路。</strong></p>
                 <div class="case-strip">
-                  <div><strong>不编造</strong><span>一切基于确认事实</span></div>
-                  <div><strong>可解释</strong><span>结论可追溯到原文</span></div>
-                  <div><strong>零成本</strong><span>无需任何 LLM API</span></div>
-                  <div><strong>诚实第一</strong><span>经得起面试追问</span></div>
+                  <div><strong>低门槛</strong><span>Web 隐藏复杂 Prompt</span></div>
+                  <div><strong>高自由</strong><span>Skill 多轮追问深度分析</span></div>
+                  <div><strong>标准链路</strong><span>JD→诊断→改写→PDF</span></div>
+                  <div><strong>独立交付</strong><span>需求→PRD→测试→上线</span></div>
                 </div>
               </div>
 
               <div class="case-sec">
                 <div class="case-label">行动</div>
                 <div class="case-rows">
-                  <div class="case-row"><strong>全流程</strong><span>JD 分析 → 差距诊断 → 素材追问 → 改写 bullet → 求职材料 → 面试准备 → ATS 友好 PDF，七步闭环</span></div>
-                  <div class="case-row"><strong>信任机制</strong><span>事实台账 · 确认闸门 · 五维评审 · 多 JD 底稿——从机制上杜绝编造</span></div>
-                  <div class="case-row"><strong>三端演进</strong><span>先做 Skill 验证工作流 → Chrome 插件贴近投递现场 → Web 零门槛在线</span></div>
-                  <div class="case-row"><strong>技术约束</strong><span>FastAPI + Vue 3 + Vercel；规则引擎可解释零成本；插件本地解析、Key 只存本机；PDF 文本可选中</span></div>
+                  <div class="case-row"><strong>产品设计</strong><span>围绕"输入 JD→识别匹配差距→针对性改写→生成可投递简历"链路，设计 JD 解析、简历问题诊断、内容优化与 PDF 导出流程，降低用户重复修改与 Prompt 设计成本</span></div>
+                  <div class="case-row"><strong>用户分层</strong><span>Web 端隐藏复杂 Prompt 与 Agent 调用，以标准化步骤降低门槛；Skill 端支持多轮追问、深度分析与文档生成，满足高阶用户自由探索</span></div>
+                  <div class="case-row"><strong>推进落地</strong><span>独立完成需求分析、产品方案、PRD、测试与上线，协同 Coding Agent 推进开发</span></div>
+                  <div class="case-row"><strong>技术栈</strong><span>Vue、Python、FastAPI、Vercel</span></div>
                 </div>
                 <div class="case-steps">
-                  <span>目标与材料</span><span class="step-arrow">→</span><span>JD 分析</span><span class="step-arrow">→</span><span>证据映射</span><span class="step-arrow">→</span><span>追问确认</span><span class="step-arrow">→</span><span>材料生成</span><span class="step-arrow">→</span><span>PDF 排版</span><span class="step-arrow">→</span><span>交付校验</span>
+                  <span>输入 JD</span><span class="step-arrow">→</span><span>匹配差距识别</span><span class="step-arrow">→</span><span>针对性改写</span><span class="step-arrow">→</span><span>PDF 导出</span>
                 </div>
               </div>
 
               <div class="case-sec">
                 <div class="case-label">结果</div>
                 <div class="case-strip">
-                  <div><strong>3 端</strong><span>Skill · 插件 · Web 全交付</span></div>
-                  <div><strong>0 元</strong><span>Web 分析全链路 API 成本</span></div>
-                  <div><strong>9+6</strong><span>测试全绿 · Web 另有单测</span></div>
-                  <div><strong>3 种</strong><span>PDF 风格 · ATS 可选中</span></div>
+                  <div><strong>20 人</strong><span>灰度测试用户</span></div>
+                  <div><strong>100 份</strong><span>累计分析 JD</span></div>
+                  <div><strong>200+</strong><span>生成简历草稿</span></div>
+                  <div><strong>60–80</strong><span>完整流程</span></div>
                 </div>
-                <p class="case-small">Skill 9 项契约测试通过 · 插件 6 项领域测试 + 本机侧载成功（2026-07-27）· Web 部署 Vercel · Apache 2.0 开源。</p>
+                <p class="case-small">邀请约 20 名同学进行灰度测试，累计分析 100 份 JD、生成 200+ 份简历草稿，完成约 60–80 次完整流程；其中 12 人使用 Skill 版本，产生 100+ 次交互。</p>
                 <div class="case-links">
                   <a href="https://easy-job-tutor-web.vercel.app/" target="_blank" rel="noopener">在线体验 →</a>
                   <a href="https://github.com/yicLionel/Easy-Job-Tutor" target="_blank" rel="noopener">GitHub · 主仓库 →</a>
@@ -170,16 +313,15 @@
               <div class="case-sec">
                 <div class="case-label">取舍与复盘</div>
                 <div class="case-rows">
-                  <div class="case-row"><strong>先不用大模型</strong><span>规则引擎换「可解释 + 零成本」，接口留好可无缝升级为 LLM</span></div>
-                  <div class="case-row"><strong>先做 Skill</strong><span>最低成本验证追问式工作流，再投入浏览器端与 Web</span></div>
-                  <div class="case-row"><strong>诚实优先</strong><span>宁可慢，不编造——牺牲即时惊喜，换求职场景最珍贵的信任</span></div>
-                  <div class="case-row"><strong>复盘</strong><span>什么判断被验证了？什么做法重来会不同？</span></div>
+                  <div class="case-row"><strong>用户分层优先</strong><span>不做一刀切产品：低门槛 Web 满足多数用户，高自由 Skill 服务进阶用户</span></div>
+                  <div class="case-row"><strong>信任与门槛平衡</strong><span>Web 端隐藏复杂 Prompt 降低门槛，Skill 端保留深度分析能力</span></div>
+                  <div class="case-row"><strong>独立推进</strong><span>从需求分析到上线全流程独立完成，协同 Coding Agent 提效开发</span></div>
                 </div>
               </div>
 
               <div class="case-gallery">
                 <img src="images/work-ejt-resume.png" alt="Easy-Job-Tutor 生成的 Modern Minimal 风格简历预览">
-                <p>最终产物是 ATS 友好、可选中文本的 PDF 简历——三种风格随岗位切换，设计原则明确拒绝技能条与花哨排版。</p>
+                <p>最终产物是 ATS 友好、可选中文本的 PDF 简历，围绕目标 JD 针对性改写，降低重复修改成本。</p>
               </div>
 
               <button class="case-close" onclick="document.getElementById('wt-ejt').click()">收起 ▲</button>
@@ -189,10 +331,10 @@
         </div>
       </div>
 
-      <!-- Project 02: KamaClaude -->
+      <!-- Project 04: KamaClaude -->
       <div class="work-item">
         <button class="work-toggle" id="wt-kama" aria-expanded="false" aria-controls="case-kama">
-          <span class="wk-idx">02</span>
+          <span class="wk-idx">04</span>
           <span class="wk-title">KamaClaude — Agent 运行时源码深潜</span>
           <span class="wk-desc">基于开源 KamaClaude 的本地 AI Agent 运行时（daemon + CLI/TUI + Agent Loop），以「读懂 Agent 工程内核」为目标的深度源码研读与上下文优化实验。<strong>修复 2 个真实 bug · 287 测试全绿 · 诚实验证纪律</strong></span>
           <span class="wk-meta">
@@ -299,10 +441,10 @@
         </div>
       </div>
 
-      <!-- Project 03: ML Experiment -->
+      <!-- Project 05: ML Experiment -->
       <div class="work-item">
         <button class="work-toggle" id="wt-ml" aria-expanded="false" aria-controls="case-ml">
-          <span class="wk-idx">03</span>
+          <span class="wk-idx">05</span>
           <span class="wk-title">粗粒度→细粒度图像分类 — ML 系统实验</span>
           <span class="wk-desc">从 10 种动物（粗粒度）到 10 种鸟类（细粒度），系统性评估 5 种 CNN 特征表示 × 7 种分类器 × 多组特征组合的交互效应，回答一个核心产品问题：表示与算法，谁更决定上限？<strong>Task 1 97.3% · Task 2 97.6% · 表示提升贡献 ~43pp</strong></span>
           <span class="wk-meta">
