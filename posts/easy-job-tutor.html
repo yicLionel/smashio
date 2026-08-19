@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy-Job-Tutor: Teaching AI to Be an Honest Resume Coach · Smashio</title>
+  <meta name="description" content="Easy-Job-Tutor is a skill — an instruction set that turns any AI assistant into an honest resume coach for students.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div class="site-title"><a href="../index.html">Smashio</a></div>
+      <div class="site-desc">Notes &amp; thoughts</div>
+      <nav class="site">
+        <a href="../index.html">Home</a>
+        <a href="../archive.html">Archive</a>
+        <a href="../work.html">Work</a>
+        <a href="../about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="post">
+        <header class="post-head">
+          <div class="post-date">2026-07-31</div>
+          <h1>Easy-Job-Tutor: Teaching AI to Be an Honest Resume Coach</h1>
+          <div class="post-tags"><span>Project</span></div>
+        </header>
+
+        <div class="post-body">
+          <p>Job hunting for students is opaque. You paste a job description, upload your resume, and wait. What the company is looking for, how your background stacks up against it, what you should work on next — no one tells you.</p>
+
+          <p>Easy-Job-Tutor is my attempt to change that. It is not an app. It is a skill — a set of instructions that turns any capable AI assistant into a resume coach. Install it once, and the assistant learns how to analyze a JD, diagnose gaps against your experience, ask for the details you haven't written down, rewrite bullet points, draft cover letters and referral messages, prepare interview answers, and — when asked — build an ATS-friendly PDF resume.</p>
+
+          <h2>A skill, not an app</h2>
+          <p>Designing it as a skill rather than a product was deliberate. Students already talk to AI every day; they don't need another account, another interface, another tab. The instructions travel to wherever the conversation happens — Claude Code, Codex CLI, OpenCode, Hermes, any assistant that can read a manual. Installation is one command.</p>
+
+          <h2>Honesty is the feature</h2>
+          <p>The part I'm most careful about is honesty. A resume tool that flatters you is not useful. The skill's rules are built around one constraint: never invent. Every fact in your background is tracked as <code>confirmed</code>, <code>pending_confirmation</code>, or <code>model_inference</code>, with its source. Only confirmed facts may enter the final resume. If a claim can't be supported, the assistant asks for the missing detail instead of guessing. If you ask it to fabricate, it refuses, explains the risk, and offers truthful alternatives.</p>
+
+          <p>The review system follows the same discipline. Five dimensions — JD match, ATS, HR scanability, interview readiness, credibility — each scored with evidence and a concrete improvement action. When material is insufficient, it says so instead of guessing a number. A resume built this way holds up: every claim survives an interviewer's follow-up question, because nothing in it was made up to begin with.</p>
+
+          <h2>What it ships with</h2>
+          <p>The skill comes with analysis and review templates, PDF design specs, build and verification scripts, example workflows, and documentation in six languages, released under Apache 2.0 — the source is on <a href="https://github.com/yicLionel/Easy-Job-Tutor">GitHub</a>. It has since grown siblings: a browser extension, and a web version of the same logic.</p>
+
+          <blockquote>I built this for a simple reason. When I was looking for my first job, I would have appreciated something that told me plainly what was missing. Easy-Job-Tutor is an attempt to be that, for someone else.</blockquote>
+        </div>
+
+        <nav class="post-nav">
+          <span class="muted">← Previous: None</span>
+          <a href="day-one-with-claude-code.html">Next: Day One with Claude Code →</a>
+        </nav>
+      </article>
+    </main>
+
+    <section class="subscribe">
+      <h2>Subscribe</h2>
+      <p>Get an email when I publish a new post.</p>
+      <form class="subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/yichen" method="post" target="_blank" rel="noopener">
+        <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
+        <input type="hidden" name="embed" value="1">
+        <button type="submit">Subscribe</button>
+      </form>
+      <a class="powered" href="https://buttondown.com" target="_blank" rel="noopener">Powered by Buttondown</a>
+    </section>
+
+    <footer class="site">
+      <span>© 2026 Smashio</span>
+      <span><a href="../about.html">About</a> · Powered by plain static pages</span>
+    </footer>
+  </div>
+</body>
+</html>

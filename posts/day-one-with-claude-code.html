@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day One with Claude Code: I Typed Words, It Built Me a Blog · Smashio</title>
+  <meta name="description" content="A diary entry about installing Claude Code into the VS Code terminal and watching it build this very blog.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div class="site-title"><a href="../index.html">Smashio</a></div>
+      <div class="site-desc">Notes &amp; thoughts</div>
+      <nav class="site">
+        <a href="../index.html">Home</a>
+        <a href="../archive.html">Archive</a>
+        <a href="../work.html">Work</a>
+        <a href="../about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="post">
+        <header class="post-head">
+          <div class="post-date">2026-07-31</div>
+          <h1>Day One with Claude Code: I Typed Words, It Built Me a Blog</h1>
+          <div class="post-tags"><span>Notes</span></div>
+        </header>
+
+        <div class="post-body">
+          <p>Today I did something that feels like it should be illegal but isn't. I opened the terminal inside VS Code, typed a command, and a program read the actual files of this repo, edited them, and handed me back a working blog. I'm still a little giddy.</p>
+
+          <p>It's called Claude Code. For a while I'd been using AI the normal way — paste a question into a browser tab, copy-paste the answer back. It works, but it's like writing letters to a smart pen pal. Today I installed it into the terminal and realized it could <em>see</em> my project. It knew this blog already existed, it read the existing pages, and it matched the style instead of handing me a generic template I'd have to rewire.</p>
+
+          <pre><code>$ claude</code></pre>
+
+          <h2>The moment it clicked</h2>
+          <p>The click wasn't some exotic feature. It was watching it open a file and edit it <em>in place</em> while I just sat there. Not a suggestion. Not a code block to paste. A real diff to a file that lives on my disk. I said "what the hell" out loud, alone, in my room.</p>
+
+          <p>Then I asked it to write this very page, and it just did — new HTML that matched the rest of the site, linked into the homepage timeline and the archive. I'd been telling myself for weeks that I needed to "learn HTML properly first" before starting this blog. Today I have the blog.</p>
+
+          <h2>Why this feels different</h2>
+          <p>It reads your code instead of guessing. That's the whole trick. Browser AI gives you a snippet and good luck; this is like pair programming with someone who already read the entire codebase before you walked in. You say "add a diary post to the archive," and it checks how the archive is built and matches it.</p>
+
+          <h2>The honest part</h2>
+          <p>Also, because my first post here is literally about honesty — it still messes up sometimes. It gets confused, it makes bad calls, and you have to understand enough to catch it. What I learned today wasn't "AI can code for me." It was "AI can code <em>with</em> me," and I still need to know what it's doing. Which is kind of the point, and honestly the fun part.</p>
+
+          <blockquote>To any student sitting on a project that feels too big: install this, point it at an empty folder, and type "let's make a start." The scary part is mostly momentum.</blockquote>
+
+          <p>Anyway. Day one in the books. Next up: making this blog look like a real website instead of the ten-minute default it is right now. Today that finally feels possible.</p>
+        </div>
+
+        <nav class="post-nav">
+          <a href="easy-job-tutor.html">← Previous: Easy-Job-Tutor: Teaching AI to Be an Honest Resume Coach</a>
+          <span class="muted">Next: None →</span>
+        </nav>
+      </article>
+    </main>
+
+    <section class="subscribe">
+      <h2>Subscribe</h2>
+      <p>Get an email when I publish a new post.</p>
+      <form class="subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/yichen" method="post" target="_blank" rel="noopener">
+        <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
+        <input type="hidden" name="embed" value="1">
+        <button type="submit">Subscribe</button>
+      </form>
+      <a class="powered" href="https://buttondown.com" target="_blank" rel="noopener">Powered by Buttondown</a>
+    </section>
+
+    <footer class="site">
+      <span>© 2026 Smashio</span>
+      <span><a href="../about.html">About</a> · Powered by plain static pages</span>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smashio · Notes &amp; Thoughts</title>
+  <meta name="description" content="A minimalist personal blog">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div class="site-title"><a href="index.html">Smashio</a></div>
+      <div class="site-desc">Notes &amp; thoughts</div>
+      <nav class="site">
+        <a href="index.html" class="active">Home</a>
+        <a href="archive.html">Archive</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="timeline">
+        <article class="tl-item">
+          <span class="tl-dot"></span>
+          <time class="tl-date">2026-08-19</time>
+          <a class="tl-card" href="posts/deepseek-harness.html">
+            <div class="tl-info">
+              <h2 class="tl-title">DeepSeek Harness：AI 不只是聊天，还要有人带它做事</h2>
+              <p class="tl-excerpt">从学生视角聊聊 DeepSeek Harness 的作用，以及它和 Claude Code、Hermes、Codex、WorkBuddy 的区别。</p>
+              <span class="tl-cat">AI</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="tl-item">
+          <span class="tl-dot"></span>
+          <time class="tl-date">2026-07-31</time>
+          <a class="tl-card" href="posts/day-one-with-claude-code.html">
+            <img class="tl-cover" src="images/day-one-with-claude-code.png" alt="Day One with Claude Code: I Typed Words, It Built Me a Blog" loading="lazy">
+            <div class="tl-info">
+              <h2 class="tl-title">Day One with Claude Code: I Typed Words, It Built Me a Blog</h2>
+              <p class="tl-excerpt">Today I installed Claude Code into the VS Code terminal and watched it read my files, edit my repo, and build this blog in front of me. Diary entry, day one.</p>
+              <span class="tl-cat">Notes</span>
+            </div>
+          </a>
+        </article>
+
+        <article class="tl-item">
+          <span class="tl-dot"></span>
+          <time class="tl-date">2026-07-31</time>
+          <a class="tl-card" href="posts/easy-job-tutor.html">
+            <img class="tl-cover" src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=minimalist%20flat%20lay%20of%20a%20resume%20document%20and%20a%20pen%20on%20a%20clean%20white%20desk%2C%20soft%20natural%20light%2C%20muted%20tones%2C%20clean%20photography&image_size=landscape_16_9" alt="Easy-Job-Tutor: Teaching AI to Be an Honest Resume Coach" loading="lazy">
+            <div class="tl-info">
+              <h2 class="tl-title">Easy-Job-Tutor: Teaching AI to Be an Honest Resume Coach</h2>
+              <p class="tl-excerpt">Job hunting for students is opaque. Easy-Job-Tutor is a skill I wrote to change that — it teaches any AI assistant to be a resume coach that tells you plainly what's missing.</p>
+              <span class="tl-cat">Project</span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </main>
+
+    <section class="github">
+      <div class="github-head">
+        <h2>GitHub</h2>
+        <a href="https://github.com/yicLionel" target="_blank" rel="noopener">@yicLionel</a>
+      </div>
+      <div class="gh-graph" id="gh-graph" aria-label="GitHub contribution graph">
+        <p class="gh-loading">Loading contributions…</p>
+      </div>
+      <div class="gh-meta">
+        <span id="gh-total"></span>
+        <span class="gh-legend" aria-hidden="true">
+          <span>Less</span>
+          <span class="gh-cell" data-l="0"></span>
+          <span class="gh-cell" data-l="1"></span>
+          <span class="gh-cell" data-l="2"></span>
+          <span class="gh-cell" data-l="3"></span>
+          <span class="gh-cell" data-l="4"></span>
+          <span>More</span>
+        </span>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <h2>Subscribe</h2>
+      <p>Get an email when I publish a new post.</p>
+      <form class="subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/yichen" method="post" target="_blank" rel="noopener">
+        <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
+        <input type="hidden" name="embed" value="1">
+        <button type="submit">Subscribe</button>
+      </form>
+      <a class="powered" href="https://buttondown.com" target="_blank" rel="noopener">Powered by Buttondown</a>
+    </section>
+
+    <footer class="site">
+      <span>© 2026 Smashio</span>
+      <span><a href="about.html">About</a> · Powered by plain static pages</span>
+    </footer>
+  </div>
+  <script src="scripts/github-graph.js"></script>
+</body>
+</html>
