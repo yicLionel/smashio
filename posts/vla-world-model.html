@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>机器人怎么学会"做事"？聊聊 VLA 和世界模型这两条路 · Smashio</title>
+  <meta name="description" content="用大白话聊聊具身智能最火的两条技术路线——VLA 和世界模型：它们怎么迭代、在争什么、又卡在哪里。">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div class="site-title"><a href="../index.html">Smashio</a></div>
+      <div class="site-desc">Notes &amp; thoughts</div>
+      <nav class="site">
+        <a href="../index.html">Home</a>
+        <a href="../archive.html">Archive</a>
+        <a href="../work.html">Work</a>
+        <a href="../about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="post">
+        <header class="post-head">
+          <div class="post-date">2026-08-19</div>
+          <h1>机器人怎么学会"做事"？聊聊 VLA 和世界模型这两条路</h1>
+          <div class="post-tags"><span>AI</span><span>Notes</span></div>
+        </header>
+
+        <div class="post-body">
+          <p>这两年我们熟悉的 AI，大多活在对话框里：写诗、翻译、写代码，动嘴不动手。但具身智能（Embodied AI）想改变的正是这件事——让 AI 长出一双眼睛和两只手，走进真实的物理世界：扫地、叠衣服、搬箱子，甚至帮你把洗衣机里的衣服取出来。</p>
+
+          <p>在这个领域，有两个词几乎天天出现在新闻里：VLA 和世界模型。它们都在回答同一个问题——机器人怎么学会做事？但思路完全不同。</p>
+
+          <h2>VLA：眼睛、大脑、手，一个模型全包了</h2>
+          <p>VLA 是 Vision-Language-Action 的缩写，直译就是"视觉—语言—动作"模型。可以把它理解成一个三合一的大脑：给它一张图（视觉），加上一句人话指令（语言），它直接输出一连串动作（动作）。工程师不用再写"看到杯子就往左转 5 度"这种死规则，模型自己学会了"看见什么、该干什么"。</p>
+
+          <p>代表作品有 Google DeepMind 的 RT-2、Gemini Robotics，以及 Physical Intelligence 的 π0。π0 的团队放过一段演示：机器人面对从没见过的食材，也能试着夹起来放进锅里——不是背答案，而是像人一样"看一眼就上手"。</p>
+
+          <p>这条路线信奉一句话：大力出奇迹。ChatGPT 用海量文字喂出了语言能力，VLA 想用海量的机器人数据，喂出一个通用的"机器人大脑"。数据越多，动作越丝滑。</p>
+
+          <h2>世界模型：先想象，再动手</h2>
+          <p>世界模型（World Model）走的是另一条路：先让 AI 学会"预测世界接下来会怎样"。你过马路时会先预判：这辆车还远，可以走。这个能力，就是人类自带的世界模型。世界模型要做的，是把这套"预演"装进 AI 的脑子里——看完海量视频和数据后，它能回答"如果我这样做，世界会变成什么样"。</p>
+
+          <p>有了它，机器人就能先在脑海里模拟几千几万次，挑出最稳的方案再真正动手。英伟达的 Cosmos、Google 的 Genie 都是这个方向的代表。</p>
+
+          <h2>迭代路上，三个绕不开的难题</h2>
+          <p>不管走哪条路，都有共同的硬骨头：</p>
+
+          <ul>
+            <li><strong>数据从哪来。</strong>真实机器人数据很贵：让机器人"上手"采集要人遥控（遥操作），又慢又费人力；仿真环境生成数据又快又便宜，但"仿真世界"和"真实世界"总有差距；互联网视频量大管够，可惜里面没有"动作答案"。</li>
+            <li><strong>泛化有多难。</strong>实验室里练好的技能，换一间屋子、换一种光线、换一个杯子，可能就失灵了。机器人的"考场"不是固定卷子，而是千家万户。</li>
+            <li><strong>试错成本太高。</strong>语言模型说错一句话，删掉重来；机器人做错一个动作，可能撞坏设备、伤到人。物理世界不可逆，安全必须前置，模型还得在有限的端侧算力里跑得够快。</li>
+          </ul>
+
+          <h2>两条路正在握手</h2>
+          <p>所以行业里常常吵：挺 VLA 的说"别整虚的，世界模型不也得靠数据堆出来，不如端到端一把梭"；挺世界模型的说"真身试错太贵，不如先在脑子里安全地摔几百万次"。</p>
+
+          <p>但吵归吵，两边的共识越来越明显：世界模型更像"训练加速器"和"安全试验场"，专门给 VLA 造数据、排雷。英伟达一边推 GR00T 这样的机器人基础模型，一边用 Cosmos 给机器人生成训练数据；Figure 的 Helix 则把"理解"和"动作"拆成两套系统，先想明白再动手。</p>
+
+          <blockquote>与其说二选一，不如说最终形态大概率是"VLA 干活，世界模型把关"。</blockquote>
+
+          <h2>尾声：聪明与勇敢</h2>
+          <p>具身智能最迷人的地方，是它把"聪明"和"勇敢"分开了：聪明靠算法和数据，勇敢靠工程和硬件——机器人要真去摸、真去摔、真去收拾残局。</p>
+
+          <p>对非专业的人来说，现在反而是最好的观察窗口：不用懂数学细节，也能看懂这两条路在抢什么——数据、泛化、安全地把事做完。而且这一次，宇树、智元、银河通用这些国内公司和 OpenAI、Google、Figure 站得相当近，是 AI 历史上少见的局面。</p>
+
+          <p>我有个小判断：具身智能的"GPT 时刻"，大概率不是某个模型跑分登顶，而是某个机器人第一次走进普通人的家，完成一件"看着简单、做起来极难"的小事——比如帮我把洗衣机里的衣服拿出来叠好。等那天到来时，我们可能根本意识不到，背后正是两条路线完成了一次关键握手。</p>
+        </div>
+
+        <nav class="post-nav">
+          <a href="deepseek-harness.html">← Previous: DeepSeek Harness</a>
+          <span class="muted">Next: None →</span>
+        </nav>
+      </article>
+    </main>
+
+    <section class="subscribe">
+      <h2>Subscribe</h2>
+      <p>Get an email when I publish a new post.</p>
+      <form class="subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/yichen" method="post" target="_blank" rel="noopener">
+        <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
+        <input type="hidden" name="embed" value="1">
+        <button type="submit">Subscribe</button>
+      </form>
+      <a class="powered" href="https://buttondown.com" target="_blank" rel="noopener">Powered by Buttondown</a>
+    </section>
+
+    <footer class="site">
+      <span>© 2026 Smashio</span>
+      <span><a href="../about.html">About</a> · Powered by plain static pages</span>
+    </footer>
+  </div>
+</body>
+</html>
