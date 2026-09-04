@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Minimalist flat lay of a resume document and a pen on a clean white desk">
+  <defs>
+    <linearGradient id="desk" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f5f1"/>
+      <stop offset="1" stop-color="#eceae4"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f4f2ee"/>
+    </linearGradient>
+  </defs>
+
+  <!-- desk -->
+  <rect width="1280" height="720" fill="url(#desk)"/>
+
+  <!-- document shadow -->
+  <rect x="398" y="152" width="490" height="640" rx="10" fill="#d8d4cc" opacity="0.6" transform="rotate(-4 640 360)"/>
+
+  <!-- resume document -->
+  <g transform="rotate(-4 640 360)">
+    <rect x="410" y="130" width="480" height="620" rx="10" fill="url(#paper)" stroke="#e0ddd6"/>
+    <!-- photo box -->
+    <rect x="450" y="180" width="110" height="130" rx="6" fill="#e9e6df"/>
+    <circle cx="505" cy="222" r="22" fill="#c9c4ba"/>
+    <path d="M468 288 Q505 244 542 288 Z" fill="#c9c4ba"/>
+    <!-- name line -->
+    <rect x="590" y="196" width="240" height="20" rx="10" fill="#b8b2a6"/>
+    <rect x="590" y="230" width="170" height="12" rx="6" fill="#d6d1c7"/>
+    <!-- text lines -->
+    <g fill="#ddd8ce">
+      <rect x="450" y="345" width="400" height="10" rx="5"/>
+      <rect x="450" y="370" width="360" height="10" rx="5"/>
+      <rect x="450" y="395" width="390" height="10" rx="5"/>
+      <rect x="450" y="420" width="300" height="10" rx="5"/>
+      <rect x="450" y="470" width="400" height="10" rx="5"/>
+      <rect x="450" y="495" width="340" height="10" rx="5"/>
+      <rect x="450" y="520" width="380" height="10" rx="5"/>
+      <rect x="450" y="545" width="260" height="10" rx="5"/>
+      <rect x="450" y="595" width="400" height="10" rx="5"/>
+      <rect x="450" y="620" width="320" height="10" rx="5"/>
+    </g>
+    <!-- section headings -->
+    <g fill="#b8b2a6">
+      <rect x="450" y="322" width="90" height="10" rx="5"/>
+      <rect x="450" y="447" width="70" height="10" rx="5"/>
+      <rect x="450" y="572" width="110" height="10" rx="5"/>
+    </g>
+    <!-- check marks: honest feedback -->
+    <g stroke="#8a9a7b" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M795 362 l12 12 22 -26"/>
+      <path d="M795 487 l12 12 22 -26"/>
+    </g>
+  </g>
+
+  <!-- pen -->
+  <g transform="rotate(24 960 480)">
+    <rect x="920" y="440" width="26" height="300" rx="13" fill="#3d4653"/>
+    <rect x="920" y="440" width="26" height="70" rx="13" fill="#4d5766"/>
+    <path d="M920 740 L933 782 L946 740 Z" fill="#2b323c"/>
+    <circle cx="933" cy="762" r="4" fill="#8a9a7b"/>
+    <rect x="920" y="530" width="26" height="8" fill="#c9a86a"/>
+  </g>
+
+  <!-- coffee cup hint -->
+  <circle cx="180" cy="590" r="70" fill="#e3dfd7"/>
+  <circle cx="180" cy="590" r="56" fill="#6f5544"/>
+  <circle cx="180" cy="590" r="56" fill="#7d6350" opacity="0.7"/>
+</svg>
