@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Minimalist starry night sky with a bright constellation">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1026"/>
+      <stop offset="0.6" stop-color="#122045"/>
+      <stop offset="1" stop-color="#1b2f5e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="0.35" stop-color="#cfe0ff" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#cfe0ff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#sky)"/>
+
+  <!-- faint background stars -->
+  <g fill="#ffffff">
+    <circle cx="95" cy="88" r="1.6" opacity="0.5"/>
+    <circle cx="230" cy="210" r="1.2" opacity="0.4"/>
+    <circle cx="330" cy="70" r="1.8" opacity="0.6"/>
+    <circle cx="470" cy="160" r="1.2" opacity="0.35"/>
+    <circle cx="560" cy="90" r="1.5" opacity="0.5"/>
+    <circle cx="690" cy="200" r="1.3" opacity="0.4"/>
+    <circle cx="820" cy="60" r="1.7" opacity="0.55"/>
+    <circle cx="960" cy="150" r="1.2" opacity="0.4"/>
+    <circle cx="1080" cy="90" r="1.6" opacity="0.5"/>
+    <circle cx="1190" cy="200" r="1.3" opacity="0.45"/>
+    <circle cx="150" cy="380" r="1.4" opacity="0.4"/>
+    <circle cx="300" cy="470" r="1.2" opacity="0.35"/>
+    <circle cx="520" cy="400" r="1.5" opacity="0.45"/>
+    <circle cx="760" cy="480" r="1.2" opacity="0.35"/>
+    <circle cx="1010" cy="420" r="1.6" opacity="0.5"/>
+    <circle cx="1150" cy="500" r="1.2" opacity="0.35"/>
+    <circle cx="80" cy="600" r="1.4" opacity="0.4"/>
+    <circle cx="420" cy="620" r="1.3" opacity="0.35"/>
+    <circle cx="880" cy="640" r="1.5" opacity="0.45"/>
+    <circle cx="1220" cy="620" r="1.3" opacity="0.4"/>
+  </g>
+
+  <!-- the Astra constellation -->
+  <g stroke="#cfe0ff" stroke-width="2" opacity="0.85">
+    <line x1="560" y1="330" x2="640" y2="260"/>
+    <line x1="640" y1="260" x2="740" y2="310"/>
+    <line x1="740" y1="310" x2="700" y2="410"/>
+    <line x1="700" y1="410" x2="600" y2="430"/>
+    <line x1="600" y1="430" x2="560" y2="330"/>
+    <line x1="640" y1="260" x2="700" y2="410"/>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="560" cy="330" r="7"/>
+    <circle cx="640" cy="260" r="10"/>
+    <circle cx="740" cy="310" r="7"/>
+    <circle cx="700" cy="410" r="6"/>
+    <circle cx="600" cy="430" r="7"/>
+  </g>
+  <circle cx="640" cy="260" r="60" fill="url(#glow)"/>
+  <circle cx="640" cy="260" r="18" fill="url(#glow)"/>
+
+  <!-- horizon hills -->
+  <path d="M0 720 L0 640 Q 220 560 430 630 T 900 640 T 1280 610 L1280 720 Z" fill="#0a0e1f"/>
+  <path d="M0 720 L0 680 Q 300 620 620 680 T 1280 670 L1280 720 Z" fill="#060913"/>
+</svg>
