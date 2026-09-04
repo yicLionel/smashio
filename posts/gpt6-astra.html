@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPT-6 Astra Is Here: What We Actually Know · Smashio</title>
+  <meta name="description" content="OpenAI rolled out GPT-6 Astra this week. A quick, honest rundown of the benchmarks, capabilities, pricing, and the safety noise around it.">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <div class="site-title"><a href="../index.html">Smashio</a></div>
+      <div class="site-desc">Notes &amp; thoughts</div>
+      <nav class="site">
+        <a href="../index.html">Home</a>
+        <a href="../archive.html">Archive</a>
+        <a href="../work.html">Work</a>
+        <a href="../about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <article class="post">
+        <header class="post-head">
+          <div class="post-date">2026-09-04</div>
+          <h1>GPT-6 Astra Is Here: What We Actually Know</h1>
+          <div class="post-tags"><span>Notes</span></div>
+        </header>
+
+        <div class="post-body">
+          <p>OpenAI started rolling out GPT-6 "Astra" this week — initially to select customers, with the usual fanfare. Sam Altman teased the launch a day ahead and called it "the most intelligent and aligned model in the world," which is what he always says, so I waited a couple of days for the smoke to clear before writing this. Here's the rundown, with a clear line between what's confirmed and what's still leaked gossip.</p>
+
+          <h2>Performance</h2>
+          <p>The headline number: reports say Astra scored nearly perfect on an "AGI test," which I take with a big grain of salt because nobody agrees on what an AGI test is. The more grounded claim is competitive — leaked benchmarks suggest it comfortably beats Anthropic's Claude Fable 5.1, which means OpenAI has arguably taken the lead back after a year of playing catch-up. Independent boards haven't caught up yet, though: Astra isn't listed on OpenRouter or Artificial Analysis as of today, so there's no third-party number to check the hype against. The other real upgrade is agentic: Astra is noticeably better at multi-step tool use, which matters more to me than any leaderboard.</p>
+
+          <style>
+            .bench-fig { margin: 2rem 0; }
+            .bench-fig svg { width: 100%; height: auto; display: block; }
+            .bench-fig figcaption { font-size: 0.85rem; opacity: 0.65; margin-top: 0.5rem; }
+          </style>
+
+          <figure class="bench-fig">
+            <svg viewBox="0 0 640 300" role="img" aria-label="Artificial Analysis Intelligence Index, top models as of September 2026" xmlns="http://www.w3.org/2000/svg">
+              <style>
+                .lbl { font: 13px -apple-system, "Helvetica Neue", Arial, sans-serif; fill: #333; }
+                .val { font: 12px -apple-system, "Helvetica Neue", Arial, sans-serif; fill: #666; }
+                .title { font: bold 15px -apple-system, "Helvetica Neue", Arial, sans-serif; fill: #222; }
+              </style>
+              <text x="20" y="28" class="title">Artificial Analysis Intelligence Index · Sep 2026</text>
+
+              <!-- bars: scale 50 -> 70 over 0..560px (28px per point) -->
+              <text x="20" y="72" class="lbl">Claude Fable 5.1 (Max Effort)</text>
+              <rect x="20" y="80" width="448" height="14" rx="7" fill="#c8d2de"/>
+              <text x="476" y="92" class="val">66</text>
+
+              <text x="20" y="122" class="lbl">Claude Fable 5.1 (Xhigh Effort)</text>
+              <rect x="20" y="130" width="420" height="14" rx="7" fill="#c8d2de"/>
+              <text x="448" y="142" class="val">65</text>
+
+              <text x="20" y="172" class="lbl">Claude Opus 5 (Max Effort)</text>
+              <rect x="20" y="180" width="364" height="14" rx="7" fill="#c8d2de"/>
+              <text x="392" y="192" class="val">63</text>
+
+              <text x="20" y="222" class="lbl">Kimi K3 (max) · GLM-5.3 (max)</text>
+              <rect x="20" y="230" width="280" height="14" rx="7" fill="#e0b078"/>
+              <text x="308" y="242" class="val">60</text>
+
+              <text x="20" y="284" class="lbl" font-style="italic">GPT-6 Astra — not yet listed</text>
+              <rect x="242" y="284" width="298" height="8" rx="4" fill="none" stroke="#4a6fa5" stroke-dasharray="6 4"/>
+              <text x="548" y="292" class="val" fill="#4a6fa5">?</text>
+            </svg>
+            <figcaption>Scores from artificialanalysis.ai, the most-watched independent benchmark board. GPT-6 Astra isn't on OpenRouter or Artificial Analysis yet (the newest OpenAI models listed are the GPT-5.6 series from July), so independent numbers are still pending — the dashed bar marks where it would need to land to back the "nearly perfect AGI test" claims.</figcaption>
+          </figure>
+
+          <h2>What it can actually do</h2>
+          <p>The genuinely new trick is that Astra can run desktop apps and automate tasks by voice — less "chatbot," more "agent that lives on your machine." The interesting caveat: its riskiest cybersecurity capabilities are locked down and restricted to a small group of approved testers. So what most of us get is the careful version.</p>
+
+          <h2>Cost</h2>
+          <p>Early reporting puts it at roughly 2.5× the previous generation's price. Exact per-token API pricing hasn't been published yet as far as I can find, so if you're building on it, budget for the multiple and wait for the official pricing page before committing to anything.</p>
+
+          <p style="border-left: 4px solid #4a6fa5; background: #f4f6f9; padding: 0.75rem 1rem; border-radius: 0 6px 6px 0;"><strong>💰 Cost at a glance:</strong> ≈ <strong>2.5×</strong> the previous generation. Official per-million-token API pricing: not yet published.</p>
+
+          <h2>The safety noise</h2>
+          <p>It wouldn't be a major launch without drama. A pre-release report in The Verge raised fears of a safety "race to the bottom" between the labs, and Reuters reported that OpenAI told lawmakers it's building "automated shutdown" capabilities for AI tools — which is either reassuring or ominous depending on how your morning is going. I mostly find it notable that the safety conversation is now happening at launch speed instead of after the fact.</p>
+
+          <h2>My honest take</h2>
+          <p>Half of what we "know" right now is leaked benchmarks and marketing lines, so treat all of the above as a snapshot, not scripture. What seems solid: it's a real capability jump, especially for agents; it's expensive; and the most powerful parts are gated. I'll write a follow-up once I've actually used it for something real — my rule from the Claude Code days still holds: the demo is never the job.</p>
+
+          <blockquote>New model launches all sound the same on day one. The only review that matters is yours, three weeks in, when the novelty has worn off and the bill arrives.</blockquote>
+        </div>
+
+        <nav class="post-nav">
+          <a href="day-one-with-claude-code.html">← Previous: Day One with Claude Code: I Typed Words, It Built Me a Blog</a>
+          <span class="muted">Next: None →</span>
+        </nav>
+      </article>
+    </main>
+
+    <section class="subscribe">
+      <h2>Subscribe</h2>
+      <p>Get an email when I publish a new post.</p>
+      <form class="subscribe-form" action="https://buttondown.com/api/emails/embed-subscribe/yichen" method="post" target="_blank" rel="noopener">
+        <input type="email" name="email" placeholder="you@example.com" required aria-label="Email address">
+        <input type="hidden" name="embed" value="1">
+        <button type="submit">Subscribe</button>
+      </form>
+      <a class="powered" href="https://buttondown.com" target="_blank" rel="noopener">Powered by Buttondown</a>
+    </section>
+
+    <footer class="site">
+      <span>© 2026 Smashio</span>
+      <span><a href="../about.html">About</a> · Powered by plain static pages</span>
+    </footer>
+  </div>
+</body>
+</html>
